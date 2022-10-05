@@ -1,0 +1,173 @@
+@import "reset";
+
+.header {
+    background: #fff;
+    padding: 44px 0 40px;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .address {
+        max-width: 690px;
+        height: 40px;
+        background-image: url(../img/search.svg);
+    }
+    & .buttons {
+        display: flex;
+        & .button {
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            border: 1px solid #d9d9d9;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+            border-radius: 2px;
+            padding: 8px 16px;
+            &.button-primary {
+                background: #1890ff;
+                border: 1px solid #1890ff;
+                margin-right: 10px;
+                & .button-text {
+                    color: #ffffff;
+                }
+            }
+            &-text {
+                font-family: "SF Pro Display";
+                font-size: 16px;
+                color: #595959;
+                margin-left: 6px;
+            }
+        }
+    }
+}
+
+.banner {
+    margin-bottom: 56px;
+    &__block {
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff1b8;
+        border-radius: 10px;
+        box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    }
+    & .info {
+        padding: 68px 0 69px 70px;
+        & h1 {
+            width: 450px;
+            font-weight: 700;
+            font-size: 39px;
+            line-height: 46px;
+            color: #302c34;
+            margin-bottom: 15px;
+        }
+        & p {
+            width: 540px;
+            font-size: 24px;
+            line-height: 28px;
+            color: #302c34;
+        }
+    }
+    & .img {
+        width: 480px;
+        height: 300px;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.restaurants {
+    padding-bottom: 60px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 44px;
+        & .search {
+            max-width: 306px;
+            height: 34px;
+            background-image: url(../img/restaurants-search.svg);
+        }
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & .card {
+            width: 384px;
+            background: #ffffff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 7px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            & .img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+            & .info {
+                padding: 21px 23px 35px 24px;
+                & .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    & h3 {
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: #000000;
+                    }
+                    & span {
+                        background: #262626;
+                        border-radius: 2px;
+                        font-size: 12px;
+                        color: #ffffff;
+                        padding: 4px 8px;
+                    }
+                }
+                & .other {
+                    display: flex;
+                    align-items: center;
+                    & .rating {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 26px;
+                        & .star {
+                            width: 14px;
+                            height: 14px;
+                            margin-right: 8px;
+                        }
+                        & span {
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: #ffc107;
+                        }
+                    }
+                    & .price {
+                        display: flex;
+                        align-items: center;
+                        font-size: 18px;
+                        color: #8c8c8c;
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background: #8c8c8c;
+                            margin: 0 10px;
+                        }
+                    }
+                    & .category {
+                        font-size: 18px;
+                        color: #8c8c8c;
+                    }
+                }
+            }
+        }
+    }
+}
